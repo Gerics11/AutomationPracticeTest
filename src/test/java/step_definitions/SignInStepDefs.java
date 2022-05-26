@@ -71,6 +71,6 @@ public class SignInStepDefs extends AbstractStepDefs{
     @Then("sign in page is shown")
     public void signInPageIsShown() {
         String currentUrl = driver.getCurrentUrl();
-        Assert.assertEquals(currentUrl,"http://automationpractice.com/index.php?controller=authentication&back=my-account");
+        Assert.assertTrue(currentUrl.matches("^http://automationpractice\\.com/index\\.php\\?controller=authentication.*"));
     }
 }
