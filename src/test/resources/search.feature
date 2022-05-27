@@ -5,7 +5,7 @@ Feature: search function test
 
   Scenario Outline:
     Given the search bar is filled with '<product_name>'
-    And the search button is clicked
+    When the search button is clicked
     Then '<result_count>' result is found
     Examples:
       | product_name                | result_count |

@@ -31,6 +31,6 @@ Feature: cart functionality on the webshop
     And proceed to checkout is clicked on cart summary page
     And correct email address is entered
     And correct password is entered
-    And submit sign in with credetials button is clicked
+    When submit sign in with credetials button is clicked
     Then address page is shown
 
