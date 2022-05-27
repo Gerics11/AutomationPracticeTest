@@ -57,7 +57,7 @@ public class CartStepDefs extends AbstractStepDefs {
     }
 
     @When("quantity of product is incremented")
-    public void quantityOfProductIsIncremented() throws InterruptedException {
+    public void quantityOfProductIsIncremented() {
         homePage.clickIncreaseQuantityBtn();
     }
 
